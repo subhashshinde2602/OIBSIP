@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+header nav a {
+  color: #e5e7eb;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.hero {
+  height: 100vh;
+  padding-top: 120px;
+  text-align: center;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.hero-img {
+  width: 320px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+section {
+  padding: 80px 100px;
+}
+
+.glass {
+  background: rgba(255,255,255,0.06);
+  border-radius: 20px;
+  margin: 40px;
+}
+
+.about-img {
+  width: 260px;
+  display: block;
+  margin: 20px auto;
+}
+
+.skill {
+  margin: 20px 0;
+}
+
+.bar {
+  background: #1e293b;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.fill {
+  height: 10px;
+  border-radius: 10px;
+}
+
+.html { width: 90%; background: #38bdf8; }
+.css { width: 85%; background: #22c55e; }
+.js { width: 70%; background: #facc15; }
+
+.projects {
+  display: flex;
+  gap: 25px;
+}
+
+.card {
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: black;
+}
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.8s;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.contact-links a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+.contact-links a:hover {
+  transform: translateX(6px);
+}
+
+.contact-links i {
+  font-size: 22px;
+  color: #0a66c2;
+}
